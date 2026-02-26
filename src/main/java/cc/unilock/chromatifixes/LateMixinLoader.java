@@ -22,6 +22,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         final boolean dragonapi = loadedMods.contains("DragonAPI");
         final boolean satisforestry = loadedMods.contains("Satisforestry");
         final boolean dragonrealmcore = loadedMods.contains("DragonRealmCore");
+        final boolean reactorcraft = loadedMods.contains("ReactorCraft");
 
         List<String> mixins = new ArrayList<>();
 
@@ -78,6 +79,16 @@ public class LateMixinLoader implements ILateMixinLoader {
             if (ChromatiFixesConfig.energizationManagerFix) {
                 mixins.add("dragonrealmcore.EnergizationManagerMixin");
             }
+        }
+        if (reactorcraft) {
+            mixins.add("reactorcraft.accessor.TileEntityHeatPipeAccessor");
+            mixins.add("reactorcraft.accessor.TileEntityNuclearBoilerAccessor");
+            mixins.add("reactorcraft.accessor.TileEntityReactorBaseAccessor");
+            mixins.add("reactorcraft.accessor.TileEntityWaterCellAccessor");
+            mixins.add("reactorcraft.TileEntityHeatPipeMixin");
+            mixins.add("reactorcraft.TileEntityReactorBaseMixin");
+            mixins.add("reactorcraft.TileEntityWaterCellMixin");
+            mixins.add("reactorcraft.TileEntityCentrifugeMixin");
         }
 
         return mixins;

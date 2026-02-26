@@ -39,8 +39,11 @@ dependencies {
     devOnlyNonPublishable(rfg.deobf("curse.maven:dragonapi-235591:4722480"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:cavecontrol-235605:4721202"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:chromaticraft-235590:4721192"))
+    devOnlyNonPublishable(rfg.deobf("curse.maven:reactorcraft-235593:4721203"))
+    devOnlyNonPublishable(rfg.deobf("curse.maven:rotarycraft-235596:4721191"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:satisforestry-430986:4721194"))
 
+    devOnlyNonPublishable(rfg.deobf(project.files("libs/Waila-1.5.10_1.7.10.jar")))
     devOnlyNonPublishable(rfg.deobf(project.files("libs/DragonRealmCore 1.7.10 V33a.jar")))
 
     compileOnly("com.github.GTNewHorizons:CodeChickenCore:1.4.10:dev") { transitive = false }
