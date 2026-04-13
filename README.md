@@ -1,4 +1,4 @@
-# ChromatiFixes
+# DragonFixes
 
 Various fixes for issues found in some of Reika's mods.
 [GTNHLib](https://github.com/GTNewHorizons/GTNHLib) and [UniMixins](https://github.com/LegacyModdingMC/UniMixins) required.

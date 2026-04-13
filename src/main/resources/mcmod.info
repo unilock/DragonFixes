@@ -6,7 +6,7 @@
 		"description": "Various fixes for issues found in some of Reika's mods",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
-		"url": "https://github.com/unilock/ChromatiFixes",
+		"url": "https://github.com/unilock/DragonFixes",
 		"updateUrl": "",
 		"authorList": ["thegamemaster1234", "unilock"],
 		"credits": "",
