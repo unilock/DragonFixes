@@ -44,7 +44,9 @@ public class EarlyMixinLoader implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
     public String[] getASMTransformerClass() {
-        return null;
+        return new String[]{
+            "cc.unilock.dragonfixes.asm.dragonapi.ReikaJavaLibraryASM"
+        };
     }
 
     @Override
