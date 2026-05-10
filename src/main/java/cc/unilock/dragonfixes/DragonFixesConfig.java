@@ -31,4 +31,9 @@ public class DragonFixesConfig {
     @Config.DefaultBoolean(true)
     @Config.RequiresMcRestart
     public static boolean energizationManagerFix;
+
+    @Config.Comment("Replaces \"rubber\" with \"gemLatex\" in `RecipesDryingBed#addPostLoadRecipes` - avoids a progression skip in HBM's NTM")
+    @Config.DefaultBoolean(false)
+    @Config.RequiresMcRestart
+    public static boolean replaceRubberWithGemLatex;
 }

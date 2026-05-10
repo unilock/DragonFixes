@@ -20,6 +20,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         final boolean cavecontrol = loadedMods.contains("CaveControl");
         final boolean chromaticraft = loadedMods.contains("ChromatiCraft");
         final boolean dragonapi = loadedMods.contains("DragonAPI");
+        final boolean rotarycraft = loadedMods.contains("RotaryCraft");
         final boolean satisforestry = loadedMods.contains("Satisforestry");
         final boolean dragonrealmcore = loadedMods.contains("DragonRealmCore");
 
@@ -66,6 +67,9 @@ public class LateMixinLoader implements ILateMixinLoader {
             if (DragonFixesConfig.disableClientSpecificConfigs) {
                 mixins.add("dragonapi.ControlledConfigMixin");
             }
+        }
+        if (rotarycraft) {
+            mixins.add("rotarycraft.RecipesDryingBedMixin");
         }
         if (satisforestry) {
             mixins.add("satisforestry.SFEventsMixin");
