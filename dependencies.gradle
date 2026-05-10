@@ -34,7 +34,7 @@
  * For more details, see https://docs.gradle.org/8.0.1/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-    implementation("com.github.GTNewHorizons:GTNHLib:0.9.3:dev") { transitive = false }
+    implementation("com.github.GTNewHorizons:GTNHLib:0.9.65:dev") { transitive = false }
 
     devOnlyNonPublishable(rfg.deobf("curse.maven:dragonapi-235591:4722480"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:cavecontrol-235605:4721202"))
@@ -43,9 +43,9 @@ dependencies {
 
     devOnlyNonPublishable(rfg.deobf(project.files("libs/DragonRealmCore 1.7.10 V33a.jar")))
 
-    compileOnly("com.github.GTNewHorizons:CodeChickenCore:1.4.10:dev") { transitive = false }
-    compileOnly("com.github.GTNewHorizons:NotEnoughItems:2.8.52-GTNH:dev") { transitive = false }
-    compileOnly("com.github.GTNewHorizons:waila:1.9.15:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:CodeChickenCore:1.4.12:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:NotEnoughItems:2.8.97-GTNH:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:waila:1.19.25:dev") { transitive = false }
 
     devOnlyNonPublishable(rfg.deobf("curse.maven:thaumcraft-223628:2227552"))
 }
