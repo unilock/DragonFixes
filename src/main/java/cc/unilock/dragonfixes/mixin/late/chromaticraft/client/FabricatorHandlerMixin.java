@@ -21,9 +21,8 @@ public abstract class FabricatorHandlerMixin extends TemplateRecipeHandler {
     private Class<? extends GuiContainer> getGuiClass(Class<? extends GuiContainer> original) {
         if (original == null) {
             return GuiItemFabricator.class;
-        } else {
-            return original;
         }
+        return original;
     }
 
     /**

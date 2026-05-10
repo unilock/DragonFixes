@@ -34,6 +34,7 @@ public class LateMixinLoader implements ILateMixinLoader {
                 mixins.add("chromaticraft.client.CrystalFurnaceHandlerMixin");
                 mixins.add("chromaticraft.client.EnchantDecompHandlerMixin");
                 mixins.add("chromaticraft.client.FabricatorHandlerMixin");
+                mixins.add("chromaticraft.client.GlowTreeRendererMixin");
                 mixins.add("chromaticraft.client.WarpPointDataMixin");
             }
             if (dragonrealmcore) {
@@ -47,6 +48,9 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (chromaticraft) {
             mixins.add("chromaticraft.accessor.CrystalBlockAccessor");
             mixins.add("chromaticraft.accessor.TileEntityCrystalBroadcasterAccessor");
+            mixins.add("chromaticraft.BlockDecoFlowerMixin");
+            mixins.add("chromaticraft.BlockTieredPlantMixin");
+            mixins.add("chromaticraft.CrystalTypeBlockMixin");
             mixins.add("chromaticraft.DungeonGeneratorMixin");
             mixins.add("chromaticraft.ProgressionManagerMixin");
             mixins.add("chromaticraft.PylonFinderMixin");
