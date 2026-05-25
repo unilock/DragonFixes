@@ -39,6 +39,7 @@ dependencies {
     devOnlyNonPublishable(rfg.deobf("curse.maven:dragonapi-235591:4722480"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:cavecontrol-235605:4721202"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:chromaticraft-235590:4721192"))
+    devOnlyNonPublishable(rfg.deobf("curse.maven:reactorcraft-235593:4721203"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:rotarycraft-235596:4721191"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:satisforestry-430986:4721194"))
 

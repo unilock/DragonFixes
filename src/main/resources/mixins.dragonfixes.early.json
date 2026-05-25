@@ -4,5 +4,6 @@
   "package": "cc.unilock.dragonfixes.mixin.early",
   "refmap": "mixins.dragonfixes.refmap.json",
   "target": "@env(DEFAULT)",
-  "compatibilityLevel": "JAVA_8"
+  "compatibilityLevel": "JAVA_8",
+  "mixinextras": { "minVersion": "0.5.0" }
 }

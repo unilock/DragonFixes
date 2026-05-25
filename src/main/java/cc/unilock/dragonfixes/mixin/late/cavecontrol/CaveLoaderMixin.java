@@ -21,8 +21,7 @@ public class CaveLoaderMixin {
         try {
             biome = original.call(world, x, z);
         } catch (Exception e) {
-            DragonFixes.LOGGER.warn("Caught Exception in CaveLoader#getEffectiveBiome");
-            DragonFixes.LOGGER.warn(e);
+            DragonFixes.LOGGER.warn("Caught Exception in CaveLoader#getEffectiveBiome", e);
         }
 
         if (biome == null) {

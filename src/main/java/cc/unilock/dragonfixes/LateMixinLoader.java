@@ -20,6 +20,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         final boolean cavecontrol = loadedMods.contains("CaveControl");
         final boolean chromaticraft = loadedMods.contains("ChromatiCraft");
         final boolean dragonapi = loadedMods.contains("DragonAPI");
+        final boolean reactorcraft = loadedMods.contains("ReactorCraft");
         final boolean rotarycraft = loadedMods.contains("RotaryCraft");
         final boolean satisforestry = loadedMods.contains("Satisforestry");
         final boolean dragonrealmcore = loadedMods.contains("DragonRealmCore");
@@ -50,6 +51,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (chromaticraft) {
             mixins.add("chromaticraft.accessor.CrystalBlockAccessor");
             mixins.add("chromaticraft.accessor.TileEntityCrystalBroadcasterAccessor");
+            mixins.add("chromaticraft.BlockChromaTileMixin");
             mixins.add("chromaticraft.BlockDecoFlowerMixin");
             mixins.add("chromaticraft.BlockTieredPlantMixin");
             mixins.add("chromaticraft.CrystalTypeBlockMixin");
@@ -69,7 +71,11 @@ public class LateMixinLoader implements ILateMixinLoader {
                 mixins.add("dragonapi.ControlledConfigMixin");
             }
         }
+        if (reactorcraft) {
+            mixins.add("reactorcraft.BlockReactorTileMixin");
+        }
         if (rotarycraft) {
+            mixins.add("rotarycraft.BlockBasicMultiTEMixin");
             mixins.add("rotarycraft.RecipesDryingBedMixin");
         }
         if (satisforestry) {

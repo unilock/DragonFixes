@@ -21,7 +21,7 @@ Fixes:
   - Allows Cave Crystals and Potion Crystals to work with the Player Imitation Core, even if the player isn't in the immediate vicinity (unilock)
   - Prevents crashes caused by Adjacency Cores on neighbor state updates (thegamemaster1234, unilock)
 - DragonAPI
-  - Prevents NullPointerExceptions caused by `AbstractSearch$FoundPath#getPath`, preventing ChromatiCraft's Bezier Crystals from causing an Internal Server Error
+  - Prevents NullPointerExceptions caused by `AbstractSearch$FoundPath#getPath`, preventing ChromatiCraft's Bezier Crystals from causing an Internal Server Error (unilock)
   - With `disableClientSpecificConfigs` enabled, all "client-specific" configs use the same keys across all systems, allowing them to be packaged with modpacks and such (unilock)
 - Satisforestry
   - Prevents a ClassCastException when removing a Slug item from slot 39 of any non-player inventory (unilock)
