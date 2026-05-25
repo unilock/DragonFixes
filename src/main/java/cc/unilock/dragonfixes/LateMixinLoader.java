@@ -79,6 +79,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (rotarycraft) {
             mixins.add("rotarycraft.BlockBasicMultiTEMixin");
             mixins.add("rotarycraft.RecipesDryingBedMixin");
+            mixins.add("rotarycraft.TileEntityBedrockBreakerMixin");
         }
         if (satisforestry) {
             mixins.add("satisforestry.SFEventsMixin");
