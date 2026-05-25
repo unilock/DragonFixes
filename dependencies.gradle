@@ -42,6 +42,7 @@ dependencies {
     devOnlyNonPublishable(rfg.deobf("curse.maven:reactorcraft-235593:4721203"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:rotarycraft-235596:4721191"))
     devOnlyNonPublishable(rfg.deobf("curse.maven:satisforestry-430986:4721194"))
+    devOnlyNonPublishable(rfg.deobf("curse.maven:void-monster-235609:4721208"))
 
     devOnlyNonPublishable(rfg.deobf(project.files("libs/DragonRealmCore 1.7.10 V33a.jar")))
 

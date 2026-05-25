@@ -23,6 +23,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         final boolean reactorcraft = loadedMods.contains("ReactorCraft");
         final boolean rotarycraft = loadedMods.contains("RotaryCraft");
         final boolean satisforestry = loadedMods.contains("Satisforestry");
+        final boolean voidmonster = loadedMods.contains("VoidMonster");
         final boolean dragonrealmcore = loadedMods.contains("DragonRealmCore");
 
         List<String> mixins = new ArrayList<>();
@@ -84,6 +85,10 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (satisforestry) {
             mixins.add("satisforestry.SFEventsMixin");
             mixins.add("satisforestry.TileShaftConnectionMixin");
+        }
+        if (voidmonster) {
+            mixins.add("voidmonster.AmbientSoundGeneratorMixin");
+            mixins.add("voidmonster.MonsterGeneratorMixin");
         }
         if (dragonrealmcore) {
             mixins.add("dragonrealmcore.BlockT2HexGeneratorMixin");

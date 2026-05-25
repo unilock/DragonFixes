@@ -12,6 +12,10 @@ public class DragonFixesConfig {
     @Config.DefaultBoolean(false)
     public static boolean disableNetherShader;
 
+    @Config.Comment("Disables the hardcoded checks for Void Monster spawning in certain dimensions, instead always respecting the config")
+    @Config.DefaultBoolean(false)
+    public static boolean disableVoidMonsterHardcode;
+
     @Config.Comment("Disables IFluidHandler WAILA plugins from Reika's mods, in favor of something better")
     @Config.DefaultBoolean(false)
     public static boolean disableWailaPlugins;
