@@ -14,7 +14,7 @@ public class CrystalGlowRendererMixin {
     @Expression("metadata / 16")
     @ModifyExpressionValue(method = "renderInventoryBlock", at = @At("MIXINEXTRAS:EXPRESSION"))
     private int renderInventoryBlock(int original) {
-        if (original > 6) {
+        if (original > 5) {
             return original % 6;
         }
         return original;
