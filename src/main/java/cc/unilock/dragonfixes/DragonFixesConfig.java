@@ -44,4 +44,9 @@ public class DragonFixesConfig {
     @Config.DefaultBoolean(false)
     @Config.RequiresMcRestart
     public static boolean replaceRubberWithGemLatex;
+
+    @Config.Comment("Makes the Chromatic Lexicon always save your page")
+    @Config.DefaultBoolean(false)
+    @Config.RequiresMcRestart
+    public static boolean alwaysRememberLexiconPage;
 }
