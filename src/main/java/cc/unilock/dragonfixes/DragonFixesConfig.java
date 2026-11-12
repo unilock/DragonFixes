@@ -4,14 +4,6 @@ import com.gtnewhorizon.gtnhlib.config.Config;
 
 @Config(modid = "dragonfixes")
 public class DragonFixesConfig {
-    @Config.Comment("Disables the shader found near Data Towers from ChromatiCraft")
-    @Config.DefaultBoolean(false)
-    public static boolean disableArtefactShader;
-
-    @Config.Comment("Disables the \"heat\" shader in the Nether from DragonRealmCore")
-    @Config.DefaultBoolean(false)
-    public static boolean disableNetherShader;
-
     @Config.Comment("Disables the hardcoded checks for Void Monster spawning in certain dimensions, instead always respecting the config")
     @Config.DefaultBoolean(false)
     public static boolean disableVoidMonsterHardcode;
@@ -19,11 +11,6 @@ public class DragonFixesConfig {
     @Config.Comment("Disables IFluidHandler WAILA plugins from Reika's mods, in favor of something better")
     @Config.DefaultBoolean(false)
     public static boolean disableWailaPlugins;
-
-    @Config.Comment("Forces DragonAPI's \"client-specific\" config options to use the same keys across all systems")
-    @Config.DefaultBoolean(false)
-    @Config.RequiresMcRestart
-    public static boolean disableClientSpecificConfigs;
 
     @Config.Comment("Disables DragonRealmCore's TickIntercept ASM (pauses the server when no players are online; disabled by default in DragonRealmCore config)")
     @Config.DefaultBoolean(true)

@@ -31,7 +31,6 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (FMLLaunchHandler.side().isClient()) {
             if (chromaticraft) {
                 mixins.add("chromaticraft.client.accessor.WarpPointAccessor");
-                mixins.add("chromaticraft.client.ArtefactSpawnerMixin");
                 mixins.add("chromaticraft.client.ChromaClientEventControllerMixin");
                 mixins.add("chromaticraft.client.ChromaDimensionManagerMixin");
                 mixins.add("chromaticraft.client.CrystalFurnaceHandlerMixin");
@@ -40,9 +39,6 @@ public class LateMixinLoader implements ILateMixinLoader {
                 mixins.add("chromaticraft.client.FabricatorHandlerMixin");
                 mixins.add("chromaticraft.client.GlowTreeRendererMixin");
                 mixins.add("chromaticraft.client.WarpPointDataMixin");
-            }
-            if (dragonrealmcore) {
-                mixins.add("dragonrealmcore.client.DREventsMixin");
             }
         }
 
@@ -70,9 +66,6 @@ public class LateMixinLoader implements ILateMixinLoader {
         }
         if (dragonapi) {
             mixins.add("dragonapi.AbstractSearchFoundPathMixin");
-            if (DragonFixesConfig.disableClientSpecificConfigs) {
-                mixins.add("dragonapi.ControlledConfigMixin");
-            }
         }
         if (reactorcraft) {
             mixins.add("reactorcraft.BlockReactorTileMixin");
