@@ -81,6 +81,7 @@ public class LateMixinLoader implements ILateMixinLoader {
         }
         if (voidmonster) {
             mixins.add("voidmonster.AmbientSoundGeneratorMixin");
+            mixins.add("voidmonster.EntityVoidMonsterMixin");
             mixins.add("voidmonster.MonsterGeneratorMixin");
         }
         if (dragonrealmcore) {

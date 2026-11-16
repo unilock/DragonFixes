@@ -8,6 +8,10 @@ public class DragonFixesConfig {
     @Config.DefaultBoolean(false)
     public static boolean disableVoidMonsterHardcode;
 
+    @Config.Comment("Disables the hardcoded check for spawning the Void Monster on the Nether roof")
+    @Config.DefaultBoolean(false)
+    public static boolean disableVoidMonsterNetherRoof;
+
     @Config.Comment("Disables IFluidHandler WAILA plugins from Reika's mods, in favor of something better")
     @Config.DefaultBoolean(false)
     public static boolean disableWailaPlugins;
