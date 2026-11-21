@@ -63,6 +63,9 @@ public class LateMixinLoader implements ILateMixinLoader {
             mixins.add("chromaticraft.TileEntityLumenAlvearyTemperatureMatchingEffectMixin");
             mixins.add("chromaticraft.TileEntityPlayerDelegateMixin");
             mixins.add("chromaticraft.TileEntityWirelessPoweredMixin");
+            if (DragonFixesConfig.alwaysRememberLexiconPage) {
+                mixins.add("chromaticraft.ChromaBookGuiMixin");
+            }
         }
         if (dragonapi) {
             mixins.add("dragonapi.AbstractSearchFoundPathMixin");
